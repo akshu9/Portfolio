@@ -24,6 +24,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    
 }
 body{
     background-color:var(--bg-color) ;
@@ -531,104 +532,131 @@ li {
     margin: 3px 3px;
 }
 
-@media (max-width: 750px) and (min-width:360px){
-    
-    .burger{
+@media (max-width: 750px) {
+    .burger {
         display: block;
     }
-    
-    .navbar{
+
+    .navbar {
         display: none;
         flex-direction: column;
         text-align: center;
         width: 100%;
-        height: 35px;
-        padding: 40px;
-        
-       
-        
-        
+        padding: 20px;
     }
-    .navbar a{
-        padding: 7px;
-      margin: auto;
-       
-    }
-    
-    .header{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        
-    }
-    
-    
-    
-    .navbar.show{
+
+    .navbar.show {
         display: flex;
         background-color: #1f242d;
-        padding: 210px;
+    }
+
+    .navbar a {
+        padding: 10px;
+        margin: auto;
+        display: block;
+    }
+
+    .header {
+        flex-direction: column;
         text-align: center;
-       
-        
-
+        margin: auto;
     }
-    .home-img img{
-        width: 45vw;
-        padding: 12px;
+
+    .home-img img {
+        width: 80%;
     }
-    .box {
-        width: 90%; /* Adjusted width for responsiveness */
-        max-width: none; /* Removed max-width for mobile view */
+
+    .home-content h3 {
+        font-size: 2rem;
     }
-    
 
+    .home-content h1 {
+        font-size: 3rem;
+    }
 
+    .about-img {
+        width: 20rem;
+        height: 20rem;
+    }
 
+    .about-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .education .education-row, .skills .skills-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-column, .skills-column {
+        width: 100%;
+    }
+
+    .skills-column .title, .education-column .title {
+        text-align: center;
+    }
+    .box{
+        margin: 2px;
+    }
+
+    .contact form .input-box .input-field,
+    .contact form .textarea-field {
+        width: 100%;
+    }
 }
 
-@media (max-width: 360px){
+@media (max-width: 375px) {
+    .about, .skills, .education, .contact, .header, .home, .footer {
+        width: 100%;
+        margin: 0 auto; /* Center elements horizontally */
+        text-align: center; /* Center text content */
+    }
 
-    
-    .about{
-       width: 100vh;
-      
-        
+    .home-img img {
+        width: 100%;
+        display: block;
+        margin: 0 auto; /* Center image horizontally */
     }
-    .skills{
-        width: 100vh;
-        margin: auto;
-        
+
+    .home-content h3 {
+        font-size: 1.6rem;
+        text-align: center; /* Center text */
     }
-    .education{
-        width: 100vh;
+
+    .home-content h1 {
+        font-size: 2.5rem;
+        text-align: center; /* Center text */
     }
-    .contact{
-        width: 100vh;
+
+    .about-img {
+        width: 15rem;
+        height: 15rem;
+        display: block;
+        margin: 0 auto; /* Center image horizontally */
     }
-    .header{
-        width: 100vh;
-       
-        
+
+    .about-content h3 {
+        font-size: 1.4rem;
+        text-align: center; /* Center text */
     }
-    .home{
-        width: 100vh;
+
+    .education .education-row, .skills .skills-row {
+        flex-direction: column;
+        align-items: center;
     }
-    .footer{
-        width: 100vh;
+
+    .education-column, .skills-column {
+        width: 100%;
+        text-align: center; /* Center text */
     }
-    .home-img img{
-        width: 65vw;
-        padding: 12px;
+
+    .skills-column .title, .education-column .title {
+        text-align: center; /* Center text */
     }
-    .text-footer{
-        text-align: center;
-        font-size: 17px;
-        display: flex;
-        justify-content: center;
-        padding: 30px 0;
-        color: aliceblue;
-        background-color: #323946;
-         width: 100vh; 
+
+    .contact form .input-box .input-field,
+    .contact form .textarea-field {
+        width: 100%;
+        margin: 0 auto; /* Center input fields horizontally */
     }
 }
