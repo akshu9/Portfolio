@@ -500,7 +500,7 @@ ul {
 li {
     padding:  2px;
     width: 0; /* Set width to auto to allow text to wrap */
-    margin: auto;
+    /* margin: auto; */
     font-size: 15px;
     text-overflow: ellipsis;
     white-space: nowrap;
