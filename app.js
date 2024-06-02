@@ -16,7 +16,7 @@ function Show(){
    
 }
 function sendEmail(){
-    window.location = "mailto:xyz@yourapplicationdomain.com";
+    window.location = "mailto:akshaymishrahindmotor7@gmail.com";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
